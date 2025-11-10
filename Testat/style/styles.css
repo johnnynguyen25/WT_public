@@ -1,0 +1,12 @@
+h1,h2{
+    color: blue;
+}
+
+
+ol li:nth-child(odd){
+    color: green;
+}
+
+ol li:nth-child(even){
+    color: red;
+}
