@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback Seite</title>
+    </head>
+    <body>
+        <h1>Feedback Seite von Johnny</h1>
+        <h2>Auf dieser Seite können sie mir anonymes Feedback senden.</h2>
+        <br>
+        <p>Wenn Sie konstruktives Feedback an mich mitteilen möchten, können Sie das anynoym über das untere Kontaktformular tun.</p>
+
+        <form action="index.html" method="get">
+            <!--  so könnte man das angeben der id umgehen wenn man einfach das label als klasse umgreift und definiert -->
+            <label>Vorname & Nachname: 
+                <input type="text" name="name" placeholder="Bitte Name eingeben">
+            </label>
+        <br>
+            <!-- label for sucht eine id wert, das was im label steht gehört dann dazu
+             Beispiel Nachname: (Placeholder) -->
+            <label for="email">E-Mail-Adresse: </label>
+                <input type="text" name="email" id="email" placeholder="Bitte email angeben">
+                <small>Wir teilen Ihre Adresse niemals mit Dritten.</small>
+        <br>
+            <label for="Titel">Titel</label>
+                <input type="text" name="Titel" id="Titel" placeholder="Bitte gebe den Betreff ein">
+        <br>
+                <textarea id="Titel" rows="6" cols="50"></textarea>
+        <br>
+            <input type="submit" name="speichern" value="Speichern">
+            <input type="submit" name="abbrechen" value="abbrechen">
+        </form>
+        <a href="../html/Testat.html">zurück zur Startseite</a><br>
+        <a href="../html/Testat_abtme.html">Über mich Seite</a><br>
+        <a href="../html/Testat_Impressum.html">Mein Impressum</a><br>
+        <a href="../html/Testat_feedback.html">Feedback an mich</a><br>
+
+    </body>
+</html>
