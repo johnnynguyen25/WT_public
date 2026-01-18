@@ -1,5 +1,7 @@
 h1,h2{
-    color: blue;
+    color: black;
+    text-align: center;
+    border-color: blue;
 }
 /* */
 
@@ -19,7 +21,7 @@ img {
 body
 {
     font-family: Arial, sans-serif;
-    background-color: #f3f5f9;
+    background-color: lightblue;
 }
 
 h2 

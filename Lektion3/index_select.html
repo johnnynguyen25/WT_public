@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Elemente
+        </title>
+    </head>
+    <body>
+        <a href="http://zbw.ch">
+        <img src="bilder/auto.png" width="100px" height="100px" alt="auto benz">
+        </a>
+        &#128077;
+        
+        <!-- 
+        method get/post 
+        method get die eingabe wird in url angefügt (problem url hat limit, url schreibt gerne in log file)
+        post besser funktioniert aber im liveserver im zsm mit vs nicht
+        placeholder der graue infotext was eingegeben werden soll
+        value eine vorgegeben wert was drin steht, kann aber gelöscht werden
+        -->
+        <!-- Inputs sind dazu da um Eingaben zu lesen-->
+        <form action="index.html" method="get">
+            <!--  so könnte man das angeben der id umgehen wenn man einfach das label als klasse umgreift und definiert -->
+            <label>Vorname: 
+            <input type="text" name="Vorname" placeholder="Bitte Vorname eingeben...">
+            </label>
+            <br>
+            <!-- label for sucht eine id wert, das was im label steht gehört dann dazu
+             Beispiel Nachname: (Placeholder) -->
+            <label for="nachname">Nachname </label>
+            <input type="text" name="nachnname" id="nachname" placeholder="Bitte Nachnname eingeben...">
+            <br>
+            <label>Werbung OK?
+            <!-- möchte man nur eine liste zeigen mit evtl. scrollbar fügt man ein size hinzu size="2"-->
+            <input type="checkbox" name="ok">
+            </label>
+            <br>
+            <!-- DropDown heisst hier select -->
+            <!-- option sind ist die Auswahl -->
+            <label for="ort">Wohnort: </label>
+            <select name="ort" id="ort">
+                <!-- <option>Schweiz</option> so wäre es einfach -->
+                <!-- <option value übergibt per datenbank den kurzen code und nicht den ganzen wert,
+                 also bsp ch/at/?? -->
+                <option value="ch">Schweiz</option>
+                <option value="at">Österreich</option>
+                <option value="??">Irgendwoanders</option> 
+            </select>
+
+            <br>
+            <input type="submit" name="speichern" value="Speichern">
+             
+        </form>
+    </body>
+</html>

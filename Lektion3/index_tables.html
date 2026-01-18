@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Elemente</title>
+    </head>
+    <body>
+        
+        <!-- alte schreibweise -->
+        <table border="1">
+            <!-- tr also reihe-->
+            <!-- td das eigene Feld-->
+             <tr> <th>Ü1</th> <th>Ü2</th> <th>Ü3</th> </tr>
+            <tr> <td>F1</td> <td>F2</td> <td>F3</td> </tr>
+            <tr> <td>F1.2</td> <td>F2.2</td> <td>F3.2</td> </tr>
+
+        </table>
+
+         <!-- neue schreibweise, somit kann man mit css besser greifen -->
+        <figure>
+            <table border="2">
+                <caption>Eine schöne Tabelle</caption>
+                <thead>
+                    <tr> <th>Ü1</th> <th>Ü2</th> <th>Ü3</th> </tr>
+                </thead>
+
+                <tbody>
+                <!-- Row span ist wenn das 1. Feld auch die 1. und 2. Zeile verbindet-->
+                    <tr> <td rowspan="2">F1</td> <td>F2</td> <td>F3</td> </tr>
+                    <tr>                 <td>F2.2</td> <td>F3.2</td> </tr>
+                </tbody> 
+            
+                <tfoot>
+                    <tr> <td colspan="3">Fuss1</td> </tr>
+                </tfoot>
+            </table>
+            <!-- braucht es nicht unbedingt, bsp Quellenangabe nur, wenn ja, dann brauchts auch figure-->
+            <figcaption>Unterschrift</figcaption>
+        </figure> 
+        
+
+
+    </body>
+</html>

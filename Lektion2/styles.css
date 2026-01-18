@@ -1,0 +1,55 @@
+/* Direkte Tags nutzen wenn mehrere gleiche Styles benutzt wird */
+h1,h2{
+    color: lightblue;
+    outline-style: dotted;
+}
+
+/*--------------------------------*/
+
+h1 {
+    font-size: 60px;
+    /* rgba a ist für die Durchsichtigkeit */
+    /* color: rgba(147, 217, 66, 0.563); */
+
+    /* Anzeige als Hexadezimal ebenfalls möglich */
+    color: #ff0000;
+    background-color: black;
+    line-height: 2em; /*em ist bezogen auf die Schriftgrösse 2x ist also abhängig, px geht auf die Pixel */
+    width: 50%;
+}
+
+/*--------------------------------*/
+
+/* Klasse kann man öfters haben, nutzt man wenn mehrere Konfigurationen bei versch. Tags gewünscht wird. */
+.ue1 {
+    outline: dotted green;
+    outline-color: black;
+    color: green;
+}
+
+/*--------------------------------*/
+
+/* auf eine ID kann man nur 1x zugreifen und darf auch nur einmal geben */
+#ue2{
+    color: grey;
+}
+
+/*--------------------------------*/
+/* das > bedeutet dass wenn nur li ein "direktes Kind von Ol ist, sonst zieht es nicht */
+/*ol>li*/
+
+/* ol li:nth-child(2) wenn man eine gewisse Zeile nur umbearbeiten möchte */
+/* ol li:nth-child(odd) odd und even gäbs auch*/
+
+ol li:nth-child(odd){
+    color: green;
+}
+
+/*--------------------------------*/
+/*Pseudoselektor nennt man diese bei Links */
+a:link, a:visited{
+    background-color: yellow;
+}
+a:hover {
+    background-color: blue;
+}
