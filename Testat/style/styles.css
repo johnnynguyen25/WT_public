@@ -1,15 +1,29 @@
-h1,h2{
+/*****Mainsites*****/
+h1
+{
     color: black;
     text-align: center;
-    border-color: blue;
+    /*border-color: blue; */
 }
-/* */
 
-ol li:nth-child(odd){
+h2 
+{
+  margin: 10px;
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+ol li:nth-child(odd)
+{
     color: green;
 }
 
-ol li:nth-child(even){
+ol li:nth-child(even)
+{
     color: red;
 }
 img {
@@ -18,17 +32,6 @@ img {
 
 /* CSS für die Div Box */
 
-body
-{
-    font-family: Arial, sans-serif;
-    background-color: lightblue;
-}
-
-h2 
-{
-    text-align: center;
-    color: #1b3b5f;
-}
 
 /*.cv-container 
 {
@@ -41,7 +44,8 @@ h2
     border: 1px solid #d6deeb;
 }
 */
-.cv-row {
+.cv-row 
+{
     display: flex;
     gap: 16px;
     padding: 12px 10px;
@@ -74,4 +78,29 @@ h2
     background-color: #ffeccc;
     border: 1px solid #f0c27b;
     color: #8a5a15;
+}
+
+
+
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+}
+
+ul li a 
+{
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover 
+{
+  background-color: #111111;
 }

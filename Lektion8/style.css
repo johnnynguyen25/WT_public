@@ -1,0 +1,60 @@
+/*body 
+{
+    background-color: green;
+}
+
+/* min-wdith von klein auf gross */
+/* max-width von gross auf klein erfassen */
+
+/*
+@media (min-width: 160px){
+    body {
+        background-color: blue;
+    }
+}
+@media (min-width: 320px){
+    body {
+        background-color: yellow;
+    }
+}
+
+
+@media (max-width: 320px){
+    body {
+        background-color: blue;
+    }
+}
+@media (max-width: 160px){
+    body {
+        background-color: yellow;
+    }
+}
+*/
+
+.flexcontainer {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-around; /*flex-end, flex-start, space-around */
+    align-items:last baseline;
+}
+
+.flexitem
+{
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.flexitem:nth-child(1){
+    order: 1;
+}
+.flexitem:nth-child(2){
+    order: 3;
+    display:none; /*die anderen Elemente teilen sich den Platz dann wieder auf */
+}
+.flexitem:nth-child(3){
+    order: 2;
+}
+.flexitem:nth-child(4){
+    order: 4;
+}

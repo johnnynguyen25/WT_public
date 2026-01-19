@@ -1,0 +1,19 @@
+ol li {
+    font-family: Arial, Verdana, serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 1.3em;
+    letter-spacing: 0.2em;
+    text-align: left;
+ 
+}
+ 
+ul {
+    list-style-type: none;
+}
+ 
+ul li {
+    display: inline;
+}

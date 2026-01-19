@@ -1,0 +1,36 @@
+/* Allgemeiner Start über normalize.css */
+@import url("normalize.css");
+
+/* Allgemeine Einstellunge, für jede Seite relevant */
+@import url("allgemein.css");
+
+
+.border
+{
+    border: 1px solid red;
+}
+
+.border div
+{
+    background-color: green;
+    margin: 2px;
+    width: 100px;
+    float: right;
+}
+
+
+.pos
+{
+    /* Positionen: relative Vom Standpunkt aus
+    , absoute = von HTML aus, nimmts aus dem Fluss, positionierts auf der Seite, und scrollt mit
+    , fixed = bleibt beim scrollen mit */
+    clear: right;
+
+
+}
+
+.clearfix
+{
+    overflow: auto;
+    zoom: 1;
+}

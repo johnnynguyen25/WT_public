@@ -1,0 +1,23 @@
+/*
+Allgemeine Einstellunge ,für jede Unterseite relevant
+*/
+
+:root
+{
+    --standardpadding: 5px;
+}
+
+/* Elemente */
+td, li
+{
+    padding: var(--standardpadding);
+}
+
+li 
+{
+    border: 1px solid green;
+}
+
+
+
+/* Klassen */
