@@ -1,0 +1,54 @@
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid blue;
+  outline-offset: 0.5px;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.cv-row {
+    display: flex;
+    gap: 16px;
+    padding: 12px 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #f7f9ff;
+    border: 1px solid #d6deeb;
+}
+
+.cv-label {
+    flex: 0 0 220px;
+    font-weight: bold;
+    color: #1b3b5f;
+}
+
+.cv-info {
+    flex: 1;
+    color: #333;
+}
+
+.cv-footer {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: #ffeccc;
+    border: 1px solid #f0c27b;
+    color: #8a5a15;
+}
+
+ol li:nth-child(odd) {
+    color: green;
+}
+
+ol li:nth-child(even) {
+    color: red;
+}

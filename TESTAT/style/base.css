@@ -1,0 +1,18 @@
+h1 {
+    color: black;
+    text-align: center;
+    /*border-color: blue; */
+}
+
+h2 {
+  margin: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(149, 149, 149);
+}
+
+img {
+    width: 300px;
+}
