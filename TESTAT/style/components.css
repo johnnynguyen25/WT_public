@@ -24,7 +24,9 @@ ul li a {
 }
 
 .cv-label {
-    flex: 0 0 220px;
+    /* flex: 0 0 220px; */
+    flex-basis: 30%;
+    min-width: 180px;
     font-weight: bold;
     color: #1b3b5f;
 }
@@ -32,6 +34,7 @@ ul li a {
 .cv-info {
     flex: 1;
     color: #333;
+    /* color: black; */
 }
 
 .cv-footer {
@@ -40,9 +43,9 @@ ul li a {
     border-radius: 8px;
     text-align: center;
     font-size: 0.9em;
-    background-color: #ffeccc;
-    border: 1px solid #f0c27b;
-    color: #8a5a15;
+    background-color: #a9c6f7;
+    border: 3px solid #000000;
+    color: #000000;
 }
 
 ol li:nth-child(odd) {

@@ -10,7 +10,8 @@ h2 {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(149, 149, 149);
+    /* background-color: rgb(149, 149, 149); */
+    background-image: url(../imgs/background_generate.png);
 }
 
 img {
