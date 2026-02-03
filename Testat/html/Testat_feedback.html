@@ -8,42 +8,44 @@
         <link rel="stylesheet" href="../style/layout.css">
         <link rel="stylesheet" href="../style/components.css">
         <link rel="stylesheet" href="../style/responsive.css">
-
     </head>
     <body class="page-feedback">
         <h1>Feedback</h1>
             <ul>
-                <li><a href="Testat.html"tabindex="1">Newsseite</a></li>  
-                <li><a href="Testat_abtme.html" tabindex="2">Über mich</a></li>
-                <li><a href="../html/Testat_feedback.html" tabindex="3">Feedback</a>
-                <li><a href="../html/Testat_Impressum.html" tabindex="4">Impressum</a>
+                <li><a href="../html/Testat.html" tabindex="1" class="navigation">Newsseite</a></li>  
+                <li><a href="../html/Testat_abtme.html" tabindex="2" class="navigation">Über mich</a></li>
+                <li><a href="../html/Testat_feedback.html" tabindex="3" class="navigation">Feedback</a></li>
+                <li><a href="../html/Testat_Impressum.html" tabindex="4" class="navigation">Impressum</a></li>
             </ul>
 
         <h3>Auf dieser Seite können sie mir anonymes Feedback senden.</h3>
-        <br>
         <p>Wenn Sie konstruktives Feedback an mich mitteilen möchten, können Sie das anynoym über das untere Kontaktformular tun.</p>
+        <form action="index.html" method="get" class="feedback-form">
+        <div class="form-group">
+            <label for="name">Vorname & Nachname:</label>
+            <input type="text" name="name" id="name" placeholder="Bitte Name eingeben">
+        </div>
 
-        <form action="index.html" method="get">
-            <!--  so könnte man das angeben der id umgehen wenn man einfach das label als klasse umgreift und definiert -->
-            <label>Vorname & Nachname: 
-                <input type="text" name="name" placeholder="Bitte Name eingeben">
-            </label>
-        <br>
-            <!-- label for sucht eine id wert, das was im label steht gehört dann dazu
-             Beispiel Nachname: (Placeholder) -->
-            <label for="email">E-Mail-Adresse: </label>
-                <input type="text" name="email" id="email" placeholder="Bitte email angeben">
-                <small>Wir teilen Ihre Adresse niemals mit Dritten.</small>
-        <br>
-            <label for="Titel">Titel</label>
-                <input type="text" name="Titel" id="Titel" placeholder="Bitte gebe den Betreff ein">
-        <br>
-            <label for="Betreff">Betreff</label>
-        <br>
-                <textarea id="Titel" rows="6" cols="50"></textarea>
-        <br>
-            <input type="submit" name="speichern" value="Speichern">
-            <input type="submit" name="abbrechen" value="abbrechen">
+        <div class="form-group">
+            <label for="email">E-Mail-Adresse:</label>
+            <input type="email" name="email" id="email" placeholder="Bitte Email angeben">
+            <small>Wird nicht öffentlich angezeigt.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="titel">Titel:</label>
+            <input type="text" name="titel" id="titel" placeholder="Bitte Betreff eingeben">
+        </div>
+
+        <div class="form-group">
+            <label for="nachricht">Betreff/Nachricht:</label>
+            <textarea id="nachricht" name="nachricht" rows="6"></textarea>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn-submit">Absenden</button>
+            <button type="reset" class="btn-cancel">Abbrechen</button>
+        </div>
         </form>
     </body>
 </html>

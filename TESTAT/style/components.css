@@ -1,7 +1,8 @@
 a:focus,
 button:focus,
 input:focus,
-textarea:focus {
+textarea:focus,
+h3:focus {
   outline: 2px solid blue;
   outline-offset: 0.5px;
 }
@@ -87,4 +88,115 @@ ol li:nth-child(even) {
 
     border: 1px solid rgba(27, 59, 95, 0.2);
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.navigation {
+    color: white;
+}
+a[data-static-color],
+a[data-static-color]:visited {
+  color: black;   /* oder blue */
+}
+
+
+/*Feedback Scheisse  */
+
+/* Die Container-Box für das ganze Formular */
+.feedback-form {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(
+    135deg,
+    #e6e6e6,
+    #000000
+    )
+}
+
+/* Jede Zeile ist eine eigene Box */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* Label über dem Input */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Box füllt die Breite aus */
+    box-sizing: border-box; /* Wichtig, damit Padding die Breite nicht sprengt */
+}
+
+/* Buttons nebeneinander */
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-cancel {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* das ist für die Links, damit sie aussehen wie die Buttons*/
+.btn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Ein schönes Blau */
+    color: white;              /* Textfarbe */
+    text-decoration: none;     /* Unterstreichung entfernen */
+    border-radius: 5px;        /* Abgerundete Ecken */
+    font-weight: bold;
+    transition: background-color 0.3s; /* Weicher Übergang beim Hover */
+}
+
+/* Der Effekt, wenn man mit der Maus drüberfährt */
+.btn-more:hover {
+    background-color: #2980b9; /* Dunkleres Blau beim Drüberfahren */
+    color: #fff;
+}
+/* Der Effekt, wenn man mit der Maus drüberfährt */
+.btn-more:hover {
+    background-color: #2980b9; /* Dunkleres Blau beim Drüberfahren */
+    color: #fff;
+}
+
+/* components.css */
+.news-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+/* components.css */
+.news-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
 }

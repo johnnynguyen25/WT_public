@@ -12,3 +12,13 @@ ul {
 ul li a:hover {
   background-color: #111111;
 }
+
+/* layout.css */
+.news-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
