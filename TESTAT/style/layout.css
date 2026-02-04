@@ -21,4 +21,5 @@ ul li a:hover {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    overflow: auto;
 }

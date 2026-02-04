@@ -115,6 +115,8 @@ a[data-static-color]:visited {
     )
 }
 
+
+
 /* Jede Zeile ist eine eigene Box */
 .form-group {
     margin-bottom: 15px;
@@ -143,6 +145,8 @@ textarea {
     display: flex;
     gap: 10px;
 }
+
+
 
 .btn-submit {
     background-color: #4CAF50;
@@ -185,13 +189,46 @@ textarea {
     color: #fff;
 }
 
-/* components.css */
-.news-box {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fafafa;
+.news-container{
+  width: 100%;
+  overflow: auto; /* clearfix für floats */
+  display: block;
 }
+
+.news-box{
+  float: left;
+  width: 30%;
+  margin: 1.5%;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  padding: 12px;
+}
+
+/* von chatgpt da die blöcke/artikel immer gleich bleiben */
+
+/* ab ~900px: 2 Spalten */
+@media (max-width: 900px){
+  .news-box{
+    width: 46%;
+    margin: 2%;
+  }
+}
+
+/* ab ~600px: 1 Spalte */
+@media (max-width: 600px){
+  .news-box{
+    width: 96%;
+    margin: 2%;
+  }
+}
+
+/* **** */
+.news-img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 /* components.css */
 .news-box img {
@@ -200,3 +237,4 @@ textarea {
     display: block;
     margin: 15px 0;
 }
+
