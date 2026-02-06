@@ -3,15 +3,15 @@ button:focus,
 input:focus,
 textarea:focus,
 h3:focus {
-  outline: 2px solid blue;
-  outline-offset: 0.5px;
+    outline: 2px solid blue;
+    outline-offset: 0.5px;
 }
 
 ul li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .cv-row {
@@ -190,43 +190,26 @@ textarea {
 }
 
 .news-container{
-  width: 100%;
-  overflow: auto; /* clearfix für floats */
-  display: block;
+    width: 100%;
+    overflow: auto; /* clearfix für floats */
+    display: block;
 }
 
 .news-box{
-  float: left;
-  width: 30%;
-  margin: 1.5%;
-  box-sizing: border-box;
-  background-color: #fafafa;
-  padding: 12px;
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    padding: 12px;
+    min-height: 500px;   /* anpassen bis es gut aussieht */
 }
 
-/* von chatgpt da die blöcke/artikel immer gleich bleiben */
-
-/* ab ~900px: 2 Spalten */
-@media (max-width: 900px){
-  .news-box{
-    width: 46%;
-    margin: 2%;
-  }
-}
-
-/* ab ~600px: 1 Spalte */
-@media (max-width: 600px){
-  .news-box{
-    width: 96%;
-    margin: 2%;
-  }
-}
-
-/* **** */
 .news-img{
-  max-width: 100%;
-  height: auto;
-  display: block;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
 }
 
 
@@ -235,6 +218,6 @@ textarea {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 15px 0;
+
 }
 
