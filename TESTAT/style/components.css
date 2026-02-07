@@ -1,8 +1,7 @@
 a:focus,
 button:focus,
 input:focus,
-textarea:focus,
-h3:focus {
+textarea:focus {
     outline: 2px solid blue;
     outline-offset: 0.5px;
 }
@@ -15,7 +14,8 @@ ul li a {
 }
 
 .cv-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 1fr;
     gap: 16px;
     padding: 12px 10px;
     border-radius: 8px;
@@ -31,14 +31,11 @@ ul li a {
 
 .cv-label {
     /* flex: 0 0 220px; */
-    flex-basis: 30%;
-    min-width: 180px;
     font-weight: bold;
     color: #1b3b5f;
 }
 
 .cv-info {
-    flex: 1;
     color: #333;
     /* color: black; */
 }
@@ -183,11 +180,6 @@ textarea {
     background-color: #2980b9; /* Dunkleres Blau beim Drüberfahren */
     color: #fff;
 }
-/* Der Effekt, wenn man mit der Maus drüberfährt */
-.btn-more:hover {
-    background-color: #2980b9; /* Dunkleres Blau beim Drüberfahren */
-    color: #fff;
-}
 
 .news-container{
     width: 100%;
@@ -196,13 +188,13 @@ textarea {
 }
 
 .news-box{
-    float: left;
-    width: 30%;
-    margin: 1.5%;
-    box-sizing: border-box;
-    background-color: #fafafa;
-    padding: 12px;
-    min-height: 500px;   /* anpassen bis es gut aussieht */
+  float: none;
+  width: 100%;
+  margin: 0 0 16px 0;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  padding: 12px;
+  min-height: 500px;
 }
 
 .news-img{
@@ -212,12 +204,4 @@ textarea {
     margin: 15px 0;
 }
 
-
-/* components.css */
-.news-box img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-
-}
 

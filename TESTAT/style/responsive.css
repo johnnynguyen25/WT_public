@@ -5,6 +5,7 @@
   margin: 0 0 16px 0;
 }
 
+
 /* Tablet */
 @media (min-width: 700px){
   .news-box{
@@ -17,6 +18,8 @@
 /* PC */
 @media (min-width: 1100px){
   .news-box{
+    float: left;
     width: 30%;
+    margin: 1.5%;
   }
 }
