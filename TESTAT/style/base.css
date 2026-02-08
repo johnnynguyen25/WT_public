@@ -1,14 +1,13 @@
-/* Global */
+/* Globale Einstellungen für jede HTML Box, Box-Berechnung */
 * { box-sizing: border-box; }
 
 html {
-  scrollbar-gutter: stable;
+  /* scrollbar-gutter: stable; */
 }
 
 h1 {
     color: black;
     text-align: center;
-    /*border-color: blue; */
 }
 
 h2 {
@@ -16,39 +15,32 @@ h2 {
   font-size: 1.2rem;
 }
 
-.page-news {
-    font-family: Arial, sans-serif;
-    /* background-color: rgb(149, 149, 149); */
-    background-image: url(../imgs/background_generate.png);
+img {
+    width: 300px;
 }
 
+
+.page-news {
+    font-family: Arial, sans-serif;
+    background-image: url(../imgs/background_generate.png);
+}
 .page-abtme {
     font-family: Arial, sans-serif;
-    /* background-color: rgb(149, 149, 149); */
     background-image: url(../imgs/background_generate.png);
 }
 .page-feedback {
     font-family: Arial, sans-serif;
-    /* background-color: rgb(149, 149, 149); */
+    background-image: url(../imgs/background_generate.png);
+}
+.page-detail {
+    font-family: Arial, sans-serif;
     background-image: url(../imgs/background_generate.png);
 }
 .page-impressum {
-    /* font-family: Arial, sans-serif; */
-    /* background-color: rgb(149, 149, 149); */
     background-image: url(../imgs/background_generate.png);
     font-style: normal;
     font-family: "Oswald", sans-serif;
     font-weight: 300;
 }   
-.page-detail {
-    font-family: Arial, sans-serif;
-    /* background-color: rgb(149, 149, 149); */
-    background-image: url(../imgs/background_generate.png);
-}
 
-
-
-img {
-    width: 300px;
-}
 
