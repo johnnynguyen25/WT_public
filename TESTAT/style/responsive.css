@@ -1,10 +1,9 @@
-/* Smartphone (Default) */
+/* Smartphone */
 .news-box{
   float: none;
   width: 100%;
   margin: 0 0 16px 0;
 }
-
 
 /* Tablet */
 @media (min-width: 700px){

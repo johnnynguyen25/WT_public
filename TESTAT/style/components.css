@@ -1,3 +1,4 @@
+/******************** HTML Global ********************/
 /* Fokus aller möglichen Interaktiven Elemente im HTML */
 a:focus,
 button:focus,
@@ -22,6 +23,7 @@ a[data-static-color]:visited {
   color: black;
 }
 
+/******************** HTML Lebenslauf ********************/
 /* Alle .cv CSS Elemente für den Lebenslauf */
 .cv-row {
     display: grid;
@@ -30,7 +32,7 @@ a[data-static-color]:visited {
     padding: 12px 10px;
     border-radius: 8px;
     margin-bottom: 10px;
-    border: 1px solid #d6deeb;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     background-image: linear-gradient(
     135deg,
     #e6e6e6,
@@ -54,15 +56,6 @@ a[data-static-color]:visited {
     border: 3px solid #000000;
     color: #000000;
 }
-
-/* CSS für die detallierte HTML Seite (Nummerierung) */
-ol li:nth-child(odd) {
-    color: green;
-}
-ol li:nth-child(even) {
-    color: red;
-}
-
 /* CSS für Bild und Lieblingsfarben Box */ 
 .profile-wrapper {
     display: flex;
@@ -87,100 +80,92 @@ ol li:nth-child(even) {
     );
 }
 
+/******************** HTML detaillierte Page ********************/
+/* CSS für die detallierte HTML Seite (Nummerierung) */
+ol li:nth-child(odd) {
+    color: green;
+}
+ol li:nth-child(even) {
+    color: red;
+}
 
-
-
-/*Feedback Scheisse  */
-
-/* Die Container-Box für das ganze Formular */
+/******************** HTML Feedback Page ********************/
+/* Die Container-Box für das ganze Feedback-Formular */
 .feedback-form {
     max-width: 500px;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     font-family: Arial, sans-serif;
     background-image: linear-gradient(
     135deg,
     #e6e6e6,
-    #000000
+    #84f0bd
     )
 }
-
-
-
-/* Jede Zeile ist eine eigene Box */
+/* Jede Eingabe ist eine eigene Box im Feedback */
 .form-group {
     margin-bottom: 15px;
     display: flex;
-    flex-direction: column; /* Label über dem Input */
+    flex-direction: column;
 }
-
+/* Titel der Eingabe im Feedback */
 label {
     font-weight: bold;
     margin-bottom: 5px;
-    color: #333;
+    color: black;
 }
-
+/* Die Eingaben-Boxen **/
 input[type="text"], 
 input[type="email"], 
 textarea {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    width: 100%; /* Box füllt die Breite aus */
-    box-sizing: border-box; /* Wichtig, damit Padding die Breite nicht sprengt */
+    width: 100%;
 }
-
-/* Buttons nebeneinander */
+/* Buttons für submit & cancel */
 .form-actions {
     display: flex;
     gap: 10px;
 }
-
-
-
 .btn-submit {
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgb(80, 199, 80);
+    color: black;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;
     border-radius: 4px;
+    cursor: pointer;
 }
-
 .btn-cancel {
-    background-color: #e74c3c;
-    color: white;
+    background-color: rgb(223, 48, 48);
+    color: black;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-/* das ist für die Links, damit sie aussehen wie die Buttons*/
+/******************** HTML News Page ********************/
+/* Button-Look für Links */
 .btn-more {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3498db; /* Ein schönes Blau */
-    color: white;              /* Textfarbe */
-    text-decoration: none;     /* Unterstreichung entfernen */
-    border-radius: 5px;        /* Abgerundete Ecken */
+    background-color: rgb(105, 140, 210);
+    text-decoration: none;
+    border-radius: 4px;
     font-weight: bold;
-    transition: background-color 0.3s; /* Weicher Übergang beim Hover */
+    transition: background-color 0.03s;
 }
-
-/* Der Effekt, wenn man mit der Maus drüberfährt */
 .btn-more:hover {
-    background-color: #2980b9; /* Dunkleres Blau beim Drüberfahren */
+    background-color: rgb(114, 133, 170); 
     color: #fff;
 }
-
 .news-container{
     width: 100%;
-    overflow: auto; /* clearfix für floats */
+    overflow: auto;
     display: block;
 }
-
 .news-box{
   float: none;
   width: 100%;
@@ -190,7 +175,6 @@ textarea {
   padding: 12px;
   min-height: 500px;
 }
-
 .news-img{
     max-width: 100%;
     height: auto;
