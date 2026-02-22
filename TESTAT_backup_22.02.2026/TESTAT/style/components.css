@@ -1,0 +1,185 @@
+/******************** HTML Global ********************/
+/* Fokus aller möglichen Interaktiven Elemente im HTML */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid blue;
+    outline-offset: 0.5px;
+}
+
+/* Aussehen der Navigationsleiste */
+ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navigation {
+    color: white;
+}
+a[data-static-color],
+a[data-static-color]:visited {
+  color: black;
+}
+
+/******************** HTML Lebenslauf ********************/
+/* Alle .cv CSS Elemente für den Lebenslauf */
+.cv-row {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 16px;
+    padding: 12px 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(
+    135deg,
+    #e6e6e6,
+    #9d83e4
+    );
+}
+.cv-label {
+    font-weight: bold;
+    color: #1b3b5f;
+}
+.cv-info {
+    color: #333;
+}
+.cv-footer {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: #a9c6f7;
+    border: 3px solid #000000;
+    color: #000000;
+}
+/* CSS für Bild und Lieblingsfarben Box */ 
+.profile-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.profile-img {
+    width: 260px;
+    border-radius: 8px;
+}
+.gradient-color {
+    padding: 30px 50px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(
+        135deg,
+        #b8d7ff,
+        #a9f18d
+    );
+}
+
+/******************** HTML detaillierte Page ********************/
+/* CSS für die detallierte HTML Seite (Nummerierung) */
+ol li:nth-child(odd) {
+    color: green;
+}
+ol li:nth-child(even) {
+    color: red;
+}
+
+/******************** HTML Feedback Page ********************/
+/* Die Container-Box für das ganze Feedback-Formular */
+.feedback-form {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(
+    135deg,
+    #e6e6e6,
+    #84f0bd
+    )
+}
+/* Jede Eingabe ist eine eigene Box im Feedback */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+/* Titel der Eingabe im Feedback */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+/* Die Eingaben-Boxen **/
+input[type="text"], 
+input[type="email"], 
+textarea {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 100%;
+}
+/* Buttons für submit & cancel */
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+.btn-submit {
+    background-color: rgb(80, 199, 80);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-cancel {
+    background-color: rgb(223, 48, 48);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/******************** HTML News Page ********************/
+/* Button-Look für Links */
+.btn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(105, 140, 210);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.03s;
+}
+.btn-more:hover {
+    background-color: rgb(114, 133, 170); 
+    color: #fff;
+}
+.news-container{
+    width: 100%;
+    overflow: auto;
+    display: block;
+}
+.news-box{
+  float: none;
+  width: 100%;
+  margin: 0 0 16px 0;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  padding: 12px;
+  min-height: 500px;
+}
+.news-img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+}
+
+

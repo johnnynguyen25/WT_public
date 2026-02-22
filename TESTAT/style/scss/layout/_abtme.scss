@@ -1,0 +1,40 @@
+@use "../base/variables" as v;
+@use "../utils/mixins" as m;
+
+.abtme {
+	max-width: v.$container-max;
+	margin: 0 auto;
+	padding: v.$space * 2;
+
+	display: grid;
+	gap: v.$space * 2;
+	grid-template-columns: minmax(320px, 400px) 1fr;
+	align-items: start;
+
+  section {
+    @include m.panel(v.$space * 1.25, v.$radius-md);
+    background: rgba(255, 255, 255, 0.85);
+  }
+}
+.cv-grid {
+	display: grid;
+	gap: v.$space;
+}
+
+@media (max-width: v.$break-tablet - 100px) {
+.abtme {
+	grid-template-columns: 1fr;
+	padding: v.$space * 1.25;
+  }
+
+.profile-wrapper {
+	flex-direction: column;
+	align-items: stretch;
+  }
+
+.profile-img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

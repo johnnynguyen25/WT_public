@@ -1,0 +1,23 @@
+        <table border="2">
+            <caption><h4>Mein Lebenslauf</h4></caption>
+                <thead>
+                    <tr> <th>Begriff</th> <th>Information</th> </tr>
+                </thead>
+
+                <tbody>
+                <!-- Row span ist wenn das 1. Feld auch die 1. und 2. Zeile verbindet-->
+                <!-- Rowspan bezeichnet die Möglichkeit mehrere Zeilen und Reihen zu verbinden-->
+                    <tr> <td>Berufliche Position</td> <td><b>ICT-System Engineer</b><br> ..mit Berufsbildner Funktion</td> </tr>
+                    <tr> <td>Schulische Laufbahn</td> <td><b>Lehre:</b> 07-2017-07-2022 <br><b>Berufstätig:</b> 08-2022 bis 11-2025 </td></tr>
+                    <tr> <td>Familie</td> 
+                        <td><b>Vater:</b> Michael Jackson 
+                        <br>
+                        <b>Mutter:</b> Maria Carey 
+                        <br>
+                        <b>Bruder:</b>Steve Jobs
+                </tbody> 
+            
+                <tfoot>
+                    <tr> <td colspan="2">Alle Angaben ohne gewähr!</td> </tr>
+                </tfoot>
+        </table>   

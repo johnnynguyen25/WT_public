@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+}
+
+h2 {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+/* WICHTIG: nicht alles auf 300px zwingen */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-detail, .page-feedback, .page-abtme, .page-news {
+  font-family: Arial, sans-serif;
+  background-image: url("../../imgs/background_generate.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.page-impressum {
+  background-image: url("../../imgs/background_generate.png");
+  font-style: normal;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #343434;
+  display: flex;
+  justify-content: center;
+}
+ul li a:hover {
+  background-color: #000;
+}
+
+.news-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow: auto;
+}
+
+.abtme {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: minmax(320px, 400px) 1fr;
+  align-items: start;
+}
+.abtme section {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.cv-grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .abtme {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .profile-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .profile-img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+/* Tablet */
+@media (min-width: 700px) {
+  .news-box {
+    float: left;
+    width: 47%;
+    margin: 1.6px;
+  }
+}
+/* PC (mit Rechnung in der Media Query) */
+@media (min-width: 1000px) {
+  .news-box {
+    float: left;
+    width: 30.3333333333%;
+    margin: 1.6px;
+  }
+}
+/* Fokus */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid blue;
+  outline-offset: 0.5px;
+}
+
+/* Nav Links */
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation {
+  color: white;
+}
+
+a[data-static-color],
+a[data-static-color]:visited {
+  color: black;
+}
+
+/* Lebenslauf */
+.cv-row {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: 16px;
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  background-image: linear-gradient(135deg, #e6e6e6, #9d83e4);
+  flex: 1;
+  min-width: 0;
+}
+
+.cv-label {
+  font-weight: bold;
+  color: #1b3b5f;
+}
+
+.cv-info {
+  color: #333;
+}
+
+.cv-footer {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px solid #000;
+  text-align: center;
+  font-size: 0.9em;
+  background-color: #a9c6f7;
+  color: #000;
+}
+
+/* Profil */
+.profile-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gradient-color {
+  padding: 30px 50px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  background-image: linear-gradient(135deg, #b8d7ff, #a9f18d);
+  min-width: 0;
+}
+
+/* Detail Page */
+ol li:nth-child(odd) {
+  color: green;
+}
+ol li:nth-child(even) {
+  color: red;
+}
+
+/* Feedback */
+.feedback-form {
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(135deg, #e6e6e6, #84f0bd);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-submit {
+  background-color: rgb(80, 199, 80);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background-color: rgb(223, 48, 48);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* News */
+.btn-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(105, 140, 210);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.03s;
+}
+.btn-more:hover {
+  background-color: rgb(114, 133, 170);
+  color: #fff;
+}
+
+.news-box {
+  float: none;
+  width: 100%;
+  margin: 0 0 16px 0;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  padding: 12px;
+  min-height: 500px;
+}
+
+.news-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+}/*# sourceMappingURL=main.css.map */

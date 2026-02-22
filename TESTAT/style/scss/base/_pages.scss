@@ -1,0 +1,22 @@
+@use "variables" as v;
+
+%page-default {
+  font-family: v.$font-default;
+  background-image: v.$bg-image;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.page-news { @extend %page-default; }
+.page-abtme { @extend %page-default; }
+.page-feedback { @extend %page-default; }
+.page-detail { @extend %page-default; }
+
+.page-impressum {
+  background-image: v.$bg-image;
+  font-style: normal;
+  font-family: v.$font-impressum;
+  font-weight: 300;
+  min-height: 100vh;
+}

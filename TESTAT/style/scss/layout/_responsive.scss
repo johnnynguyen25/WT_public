@@ -1,0 +1,19 @@
+@use "../base/variables" as v;
+
+/* Tablet */
+@media (min-width: v.$break-tablet) {
+  .news-box {
+    float: left;
+    width: 50% - 3%;
+    margin: v.$margin-base / 10;
+  }
+}
+
+/* PC (mit Rechnung in der Media Query) */
+@media (min-width: v.$break-desktop - 100px) {
+  .news-box {
+    float: left;
+    width: 100% / 3 - 3%;
+    margin: v.$margin-base / 10;
+  }
+}

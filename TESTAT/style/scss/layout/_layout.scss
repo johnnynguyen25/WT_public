@@ -1,0 +1,26 @@
+@use "../base/variables" as v;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: v.$nav-bg;
+  display: flex;
+  justify-content: center;
+
+  li a:hover {
+    background-color: v.$nav-hover-bg;
+  }
+}
+
+.news-container {
+  max-width: v.$container-max;
+  margin: 0 auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  overflow: auto;
+}

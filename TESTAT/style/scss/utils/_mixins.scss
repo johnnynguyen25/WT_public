@@ -1,0 +1,16 @@
+@use "../base/variables" as v;
+
+@mixin panel($padding: 12px, $radius: v.$radius-md, $border: 1px solid v.$border-soft) {
+  padding: $padding;
+  border-radius: $radius;
+  border: $border;
+}
+
+@mixin button($bg, $text: black) {
+  background-color: $bg;
+  color: $text;
+  border: none;
+  padding: 10px 20px;
+  border-radius: v.$radius-sm;
+  cursor: pointer;
+}

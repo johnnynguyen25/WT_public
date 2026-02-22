@@ -3,7 +3,10 @@
     <head>
         <title>Testat Mein Portfolio</title>
         <link rel="stylesheet" href="../style/normalize.css">
-        <link rel="stylesheet" href="../style/scss/main.css">
+        <link rel="stylesheet" href="../style/base.css">
+        <link rel="stylesheet" href="../style/layout.css">
+        <link rel="stylesheet" href="../style/components.css">
+        <link rel="stylesheet" href="../style/responsive.css">
         <meta charset="UTF-8">
     </head>
     <body class="page-abtme">
@@ -18,19 +21,13 @@
                 </ul>
             </nav>
         </header>
-
-        <main class="abtme">
-
-            <!-- Steckbrief (unverändert) -->
+        <main>
             <section>
                 <h2>Mein Steckbrief und ein paar Randinformationen!</h2>
                 <div class="profile-wrapper">
-                    <div class="profile-block">
-                        <img src="../imgs/my_pb.jpg" alt="Portfolio Bild" class="profile-img">
-                        <div class="gradient-color">Mein Lieblingsfarbverlauf!</div>
-                    </div>
+                    <img src="../imgs/my_pb.jpg" alt="Portfolio Bild" class="profile-img">
+                    <div class="gradient-color">Mein lieblings Farbverlauf!</div>
                 </div>
-
                 <h2><u>Kleiner Steckbrief</u></h2>
                 <p>
                     Mein Name ist Johnny Nguyen. Ich besitze einen 2. Vornamen welche aber weniger bekannt ist, ebenso auch auf Papier. 
@@ -39,53 +36,39 @@
                     In der folgenden Tabelle, findest du meinen Lebenslauf:
                 </p>
             </section>
-
-            <!-- Lebenslauf -->
             <section>
                 <h2>Mein Lebenslauf</h2>
-
-                <div class="cv-grid">
-
-                    <div class="cv-row">
-                        <div class="cv-label">Berufliche Position</div>
-                        <div class="cv-info">
-                            <b>ICT-System Engineer</b><br>
-                            ..mit Berufsbildner Funktion
-                        </div>
+                <div class="cv-row">
+                    <div class="cv-label">Berufliche Position</div>
+                    <div class="cv-info"><b>ICT-System Engineer</b><br>
+                        ..mit Berufsbildner Funktion
                     </div>
-
-                    <div class="cv-row">
-                        <div class="cv-label">Schulische Laufbahn</div>
-                        <div class="cv-info">
-                            <b>Lehre:</b> 07-2017 – 07-2022<br>
-                            <b>Berufstätig:</b> 08-2022 – 11-2025
-                        </div>
+                </div>
+                <div class="cv-row">
+                    <div class="cv-label">Schulische Laufbahn</div>
+                    <div class="cv-info">
+                        <b>Lehre:</b> 07-2017 – 07-2022<br>
+                        <b>Berufstätig:</b> 08-2022 – 11-2025
                     </div>
-
-                    <div class="cv-row">
-                        <div class="cv-label">Familie</div>
-                        <div class="cv-info">
-                            <b>Vater:</b> Michael Jackson<br>
-                            <b>Mutter:</b> Maria Carey<br>
-                            <b>Bruder:</b> Steve Jobs
-                        </div>
+                </div>
+                <div class="cv-row">
+                    <div class="cv-label">Familie</div>
+                    <div class="cv-info">
+                        <b>Vater:</b> Michael Jackson<br>
+                        <b>Mutter:</b> Maria Carey<br>
+                        <b>Bruder:</b> Steve Jobs
                     </div>
-
-                    <div class="cv-row">
-                        <div class="cv-label">Freunde</div>
-                        <div class="cv-info">
-                            <b>Bester Freund:</b> Jackie Chan<br>
-                            <b>Freundin:</b> Phi Nguyen<br>
-                            <b>Cousin:</b> Will Smith 
-                        </div>
+                </div>
+                <div class="cv-row">
+                    <div class="cv-label">Freunde</div>
+                    <div class="cv-info">
+                        <b>Bester Freund: </b>Jackie Chan<br>
+                        <b>Freundin: </b>Phi Nguyen<br>
+                        <b>Cousin: </b>Will Smith 
                     </div>
-
-                </div> <!-- cv-grid -->
-
+                </div>
             </section>
-
         </main>
-
         <footer>
             <div class="cv-footer">
                 Alle Angaben ohne Gewähr!
