@@ -10,7 +10,7 @@
 }
 
 /* PC (mit Rechnung in der Media Query) */
-@media (min-width: v.$break-desktop - 100px) {
+@media (min-width: (v.$break-desktop - 100px)) {
   .news-box {
     float: left;
     width: 100% / 3 - 3%;

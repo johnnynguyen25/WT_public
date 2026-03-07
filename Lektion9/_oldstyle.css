@@ -1,0 +1,80 @@
+
+
+/*
+.container {
+    display: grid;
+    grid-template-columns: [start] 1fr [content-start] 3fr [content-end sidebar-start] 1fr [end];
+    grid-template-rows: [header-start] auto [header-end content-start] 1fr [content footer-start] auto [footer-end];
+    height: 500vh;
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+header {
+    grid-column: start / end;
+    grid-row: header-start header-end;
+}
+
+article {
+    grid-column: content-start / content-end;
+    grid-row: content-start / content-end;
+}
+
+footer {
+    grid-column: start / end;
+    grid-row: footer-start / footer-end;
+}
+
+*/
+
+/* **** kleine Info ******
+
+wenn es Columns gibt, bsp. 5, dann gilt folgendes:
+-> grid-column: 1 / 5 (geh von 1 bis Anfang 5)
+-> grid-column: 1 / 6 (geh von 1 bis Ende 5)
+
+*/
+
+.container {
+    display: grid;
+    /* *** auch möglich: *** */
+    /* grid-template-columns: repeat(4, auto); */
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header header header"
+        "main   main   .      sidebar"
+        "footer footer footer footer";
+
+    height: 100vh;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+header {
+    /* 
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+    */
+
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
+}
+
+article {
+    /*
+    grid-column: 1 / span 2;
+    grid-row: 2 / 2;
+    */
+    grid-area: main;
+}
+
+footer {
+    /* 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 3 / 3;
+    */
+    grid-area: footer;
+}

@@ -167,13 +167,13 @@ textarea {
     display: block;
 }
 .news-box{
-  float: none;
-  width: 100%;
-  margin: 0 0 16px 0;
-  box-sizing: border-box;
-  background-color: #fafafa;
-  padding: 12px;
-  min-height: 500px;
+    float: none;
+    width: 100%;
+    margin: 0 0 16px 0;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    padding: 12px;
+    min-height: 500px;
 }
 .news-img{
     max-width: 100%;

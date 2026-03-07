@@ -21,7 +21,7 @@
 	gap: v.$space;
 }
 
-@media (max-width: v.$break-tablet - 100px) {
+@media (max-width: (v.$break-tablet - 100px)) {
 .abtme {
 	grid-template-columns: 1fr;
 	padding: v.$space * 1.25;
